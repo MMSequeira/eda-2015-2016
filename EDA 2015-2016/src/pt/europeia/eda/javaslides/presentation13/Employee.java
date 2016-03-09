@@ -1,6 +1,6 @@
 package pt.europeia.eda.javaslides.presentation13;
 
-public class Employee /* extends Object */{
+public class Employee /* extends Object */ {
 
     private String name;
     private String ssn;
