@@ -1,6 +1,6 @@
 Code for the Estrutura de Dados e Algoritmos course of Universidade Europeia.    
     
-Copyright 2015, Manuel Menezes de Sequeira.
+Copyright 2016, Manuel Menezes de Sequeira.
 
 The code is in part a derivative work of the code which accompanies the
 textbook
@@ -8,7 +8,7 @@ textbook
 > Algorithms, 4th edition by Robert Sedgewick and Kevin Wayne, Addison-Wesley
 > Professional, 2011, ISBN 0-321-57351-X. http://algs4.cs.princeton.edu
     
-Copyright 2015, Robert Sedgewick and Kevin Wayne.
+Copyright 2015 and 2016, Robert Sedgewick and Kevin Wayne.
  
 Any errors found in this code should be assumed to be the responsibility of
 the author of the modifications to the original code (viz. Manuel Menezes de
