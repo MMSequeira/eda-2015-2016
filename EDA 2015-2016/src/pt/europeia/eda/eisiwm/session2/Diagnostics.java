@@ -31,33 +31,33 @@ public class Diagnostics {
 
         out.print("Insert number to find: ");
 
-        final int numberToFind = input.nextInt();
+        final int numberToSearch = input.nextInt();
 
         input.close();
-
-        // These are alternative solutions to the problem:
-        /*-
-        int i = 0;
-        while (i != numbers.length && numbers[i] != numberToFind)
-            i++;
-        */
-        /*-
-        int i = 0;
-        while (i != numbers.length) {
-            if (numbers[i] == numberToFind)
-                break;
-            i++;
-        }
-        */
 
         // This should actually be done in an search method. Notice the
         // declaration of i outside the loop, allowing us to use its value after
         // the loop ends:
+        int i = 0;
+        while (i != numbers.length && numbers[i] != numberToSearch)
+            i++;
+
+        // These are alternative solutions to the problem:
+        /*-
+        int i = 0;
+        while (i != numbers.length) {
+            if (numbers[i] == numberToSearch)
+                break;
+            i++;
+        }
+        */
+        /*-
         int i;
         for (i = 0; i != numbers.length; i++)
-            if (numbers[i] == numberToFind)
+            if (numbers[i] == numberToSearch)
                 break;
-
+        */
+        
         // The loop may end because the array was exhausted or because the
         // number was found. This condition allows us to distinguish the two
         // cases:

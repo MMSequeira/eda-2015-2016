@@ -1,6 +1,10 @@
 package pt.europeia.eda.eisiwm.session2;
 
-public class Student {
+/*
+ * All classes extend some other class. If no superclass is indicated
+ * explicitly, Java adds Object as the superclass.
+ */
+public class Student /* extends Object */ {
 
     public Student(final String firstName, final String lastName,
             final String number, final Gender gender) {
