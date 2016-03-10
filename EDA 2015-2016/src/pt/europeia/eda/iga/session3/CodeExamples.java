@@ -3,10 +3,12 @@ package pt.europeia.eda.iga.session3;
 // Just as classes may be imported from packages, class members
 // (static members) may be imported from package-classes (or from regular
 // classes) using import static:
+
 import static java.lang.Math.PI;
 import static java.lang.System.out;
 
 // Regular import of a (generic) class from a package:
+
 import java.util.ArrayList;
 
 public class CodeExamples {
