@@ -2,6 +2,9 @@ package pt.europeia.eda.eisiwm.session2;
 
 public class CodeExamples {
 
+    // In general it is not a good idea to suppress warnings of any kind. This
+    // code, however, is supposed to be incorrect, so suppressing warnings is
+    // appropriate:
     @SuppressWarnings("unused")
     public static void main(final String[] arguments) {
         /*
