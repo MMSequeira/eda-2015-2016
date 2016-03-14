@@ -165,7 +165,7 @@ public class Warmup1 {
     }
 
     /*
-     * An utility method for print results together with expected results.
+     * An utility method for printing results together with expected results.
      */
     private static void showResult(final Object result,
             final Object expectedResult) {
