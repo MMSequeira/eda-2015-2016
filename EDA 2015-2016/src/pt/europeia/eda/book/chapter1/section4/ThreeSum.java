@@ -3,6 +3,7 @@ package pt.europeia.eda.book.chapter1.section4;
 import static java.lang.System.out;
 
 import edu.princeton.cs.algs4.In;
+import pt.europeia.eda.Stopwatch;
 
 public class ThreeSum {
     public static int numberOfZeroSumTriplesIn(final int[] numbers) {

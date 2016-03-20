@@ -4,6 +4,7 @@ import static java.lang.System.out;
 import static java.util.Arrays.sort;
 
 import edu.princeton.cs.algs4.In;
+import pt.europeia.eda.Stopwatch;
 
 
 public class FastThreeSum {

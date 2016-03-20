@@ -1,4 +1,4 @@
-package pt.europeia.eda.book.chapter1.section4;
+package pt.europeia.eda;
 
 public class Stopwatch { 
 
