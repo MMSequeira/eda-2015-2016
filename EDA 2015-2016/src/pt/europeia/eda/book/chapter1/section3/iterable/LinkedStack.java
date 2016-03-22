@@ -8,13 +8,17 @@ import java.util.NoSuchElementException;
 
 public class LinkedStack<Item> implements Iterable<Item> {
 
-    private Node first = null;
+    private Node first;
 
     private class Node {
         private Item item;
         private Node next;
     }
 
+    public LinkedStack() {
+        first = null;
+    }
+    
     public boolean isEmpty() {
         return first == null;
     }

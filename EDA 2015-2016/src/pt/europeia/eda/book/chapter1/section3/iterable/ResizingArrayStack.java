@@ -9,12 +9,13 @@ import java.util.NoSuchElementException;
 public class ResizingArrayStack<Item> implements Iterable<Item> {
     
     private Item[] items;
-    private int size = 0;
+    private int size;
 
     // Better solutions later:
     @SuppressWarnings("unchecked")
     public ResizingArrayStack() {
         items = (Item[]) new Object[1];
+        size = 0;
     }
 
     public boolean isEmpty() {

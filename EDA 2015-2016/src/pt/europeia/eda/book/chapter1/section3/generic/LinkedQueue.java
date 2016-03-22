@@ -15,6 +15,11 @@ public class LinkedQueue<Item> {
         private Node next;
     }
 
+    public LinkedQueue() {
+        first = null;
+        last = null;
+    }
+    
     public boolean isEmpty() {
         return first == null;
     }
