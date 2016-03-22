@@ -8,10 +8,11 @@ import java.util.NoSuchElementException;
 public class FixedCapacityStackOfStrings {
 
     private String[] items;
-    private int size = 0;
+    private int size;
 
     public FixedCapacityStackOfStrings(final int capacity) {
         items = new String[capacity];
+        size = 0;
     }
 
     public boolean isEmpty() {
