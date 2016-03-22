@@ -8,10 +8,11 @@ import java.util.NoSuchElementException;
 public class ResizingArrayStackOfStrings {
 
     private String[] items;
-    private int size = 0;
+    private int size;
 
     public ResizingArrayStackOfStrings() {
         items = new String[1];
+        size = 0;
     }
 
     public boolean isEmpty() {
