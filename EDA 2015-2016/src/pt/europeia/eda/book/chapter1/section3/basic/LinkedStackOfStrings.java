@@ -7,14 +7,19 @@ import java.util.NoSuchElementException;
 
 public class LinkedStackOfStrings {
 
-    private Node first = null;
-    private int size = 0;
+    private Node first;
+    private int size;
 
     private class Node {
         private String item;
         private Node next;
     }
 
+    public LinkedStackOfStrings() {
+        first = null;
+        size = 0;
+    }
+    
     public boolean isEmpty() {
         return first == null;
     }
