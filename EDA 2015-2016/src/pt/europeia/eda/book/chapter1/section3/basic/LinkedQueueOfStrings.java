@@ -7,6 +7,9 @@ import java.util.NoSuchElementException;
 
 public class LinkedQueueOfStrings {
 
+    private Node first;
+    private Node last;
+
     private class Node {
         private String item;
         private Node next;
