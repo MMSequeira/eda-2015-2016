@@ -9,6 +9,7 @@ public class LinkedQueueOfStrings {
 
     private Node first;
     private Node last;
+    private int size = 0;
 
     private class Node {
         private String item;
@@ -18,12 +19,17 @@ public class LinkedQueueOfStrings {
     public LinkedQueueOfStrings() {
         first = null;
         last = null;
+        size = 0;
     }
 
     public boolean isEmpty() {
         return first == null;
     }
 
+    public int size() {
+        return size;
+    }
+    
     public void enqueue(final String item) {
         final Node oldLast = last;
 
@@ -36,6 +42,8 @@ public class LinkedQueueOfStrings {
             first = last;
         else
             oldLast.next = last;
+        
+        size++;
     }
 
     public String dequeue() {
@@ -49,6 +57,8 @@ public class LinkedQueueOfStrings {
         if (isEmpty())
             last = null;
 
+        size--;
+        
         return item;
     }
 

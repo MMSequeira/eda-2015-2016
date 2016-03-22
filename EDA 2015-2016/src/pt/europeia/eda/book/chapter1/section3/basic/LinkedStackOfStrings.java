@@ -8,6 +8,7 @@ import java.util.NoSuchElementException;
 public class LinkedStackOfStrings {
 
     private Node first = null;
+    private int size = 0;
 
     private class Node {
         private String item;
@@ -17,6 +18,10 @@ public class LinkedStackOfStrings {
     public boolean isEmpty() {
         return first == null;
     }
+    
+    public int size() {
+        return size;
+    }
 
     public void push(final String item) {
         final Node oldFirst = first;
@@ -25,6 +30,8 @@ public class LinkedStackOfStrings {
 
         first.item = item;
         first.next = oldFirst;
+        
+        size++;
     }
 
     public String pop() {
@@ -35,6 +42,8 @@ public class LinkedStackOfStrings {
 
         first = first.next;
 
+        size--;
+        
         return item;
     }
 
