@@ -7,12 +7,14 @@ import java.util.NoSuchElementException;
 
 public class LinkedQueueOfStrings {
 
-    private Node first = null;
-    private Node last = null;
-
     private class Node {
         private String item;
         private Node next;
+    }
+    
+    public LinkedQueueOfStrings() {
+        first = null;
+        last = null;
     }
 
     public boolean isEmpty() {
