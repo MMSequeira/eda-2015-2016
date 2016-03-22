@@ -8,12 +8,13 @@ import java.util.NoSuchElementException;
 public class FixedCapacityStack<Item> {
 
     private Item[] items;
-    private int size = 0;
+    private int size;
 
     // Better solutions later:
     @SuppressWarnings("unchecked")
     public FixedCapacityStack(final int capacity) {
         items = (Item[]) new Object[capacity];
+        size = 0;
     }
 
     public boolean isEmpty() {
