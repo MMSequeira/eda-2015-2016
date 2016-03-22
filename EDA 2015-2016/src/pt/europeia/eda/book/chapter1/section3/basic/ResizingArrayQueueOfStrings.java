@@ -8,12 +8,15 @@ import java.util.NoSuchElementException;
 public class ResizingArrayQueueOfStrings {
 
     private String[] items;
-    private int size = 0;
-    private int first = 0;
-    private int last = size - 1;
+    private int size;
+    private int first;
+    private int last;
 
     public ResizingArrayQueueOfStrings() {
         items = new String[1];
+        size = 0;
+        first = 0;
+        last = items.length - 1;
     }
 
     public boolean isEmpty() {
