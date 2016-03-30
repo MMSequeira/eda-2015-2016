@@ -6,7 +6,6 @@ import static java.util.Arrays.sort;
 import edu.princeton.cs.algs4.In;
 import pt.europeia.eda.Stopwatch;
 
-
 public class FastThreeSum {
 
     public static int binarySearch(final int[] values, final int key) {
