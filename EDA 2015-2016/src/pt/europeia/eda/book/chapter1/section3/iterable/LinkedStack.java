@@ -49,10 +49,10 @@ public class LinkedStack<Item> implements Iterable<Item> {
 
     private class ListIterator implements Iterator<Item> {
         
-        private Node current = first;
+        private Node nextNode = first;
 
         public boolean hasNext() {
-            return current != null;
+            return nextNode != null;
         }
 
         // Not necessary in recent Java versions:
@@ -66,9 +66,9 @@ public class LinkedStack<Item> implements Iterable<Item> {
             if (!hasNext())
                 throw new NoSuchElementException("No more items in iteration.");
             
-            final Item item = current.item;
+            final Item item = nextNode.item;
             
-            current = current.next;
+            nextNode = nextNode.next;
             
             return item;
         }
