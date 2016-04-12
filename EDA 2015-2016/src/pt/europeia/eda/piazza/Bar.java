@@ -14,9 +14,16 @@ public class Bar extends Fooer {
     }
 
     public static void main(final String[] arguments) {
-        final Fooer fooer = new Bar();
+        // Since a Bar is a Fooer (inheritance) and a Fooer is Fooable
+        // (implementation), references of type Fooer or Fooable may hold
+        // references to instances of Bar:
+        final Bar bar = new Bar();
+        final Fooer fooer = bar;
+        final Fooable fooable = fooer;
 
+        bar.foo();
         fooer.foo();
+        fooable.foo();
     }
 
 }
