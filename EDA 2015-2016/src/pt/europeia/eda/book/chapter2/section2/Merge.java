@@ -11,12 +11,13 @@ public final class Merge {
     public static <Item extends Comparable<? super Item>> void sort(
             final Item[] values) {
         @SuppressWarnings("unchecked")
-        final Item[] auxiliary = (Item[]) Array.newInstance(values.getClass()
-                .getComponentType(), values.length);
+        final Item[] auxiliary = (Item[]) Array.newInstance(
+                values.getClass().getComponentType(), values.length);
 
         sort(values, auxiliary, 0, values.length - 1);
 
-        assert isIncreasing(values) : "Array should be increasing after sorting.";
+        assert isIncreasing(
+                values) : "Array should be increasing after sorting.";
     }
 
     private static <Item extends Comparable<? super Item>> void sort(
@@ -36,15 +37,17 @@ public final class Merge {
     private static <Item extends Comparable<? super Item>> void merge(
             final Item[] values, final Item[] auxiliary, final int first,
             final int middle, final int last) {
-        assert isIncreasing(values, first, middle) : "Can only merge increasing segments.";
-        assert isIncreasing(values, middle + 1, last) : "Can only merge increasing segments.";
+        assert isIncreasing(values, first,
+                middle) : "Can only merge increasing segments.";
+        assert isIncreasing(values, middle + 1,
+                last) : "Can only merge increasing segments.";
 
         for (int i = first; i <= last; i++)
             auxiliary[i] = values[i];
 
         int i = first;
         int j = middle + 1;
-        
+
         for (int k = first; k <= last; k++)
             if (i > middle) {
                 values[k] = auxiliary[j];
@@ -60,7 +63,8 @@ public final class Merge {
                 i++;
             }
 
-        assert isIncreasing(values, first, last) : "Merged segment should be increasing.";
+        assert isIncreasing(values, first,
+                last) : "Merged segment should be increasing.";
     }
 
     private static <Value extends Comparable<? super Value>> boolean isLess(
