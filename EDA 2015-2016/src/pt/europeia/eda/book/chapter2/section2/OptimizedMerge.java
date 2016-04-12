@@ -193,7 +193,7 @@ public final class OptimizedMerge {
         for (int i = first + 1; i <= last; i++)
             if (isLess(values[i], values[i - 1], comparator))
                 return false;
-        
+
         return true;
     }
 
