@@ -319,6 +319,7 @@ public class BinarySearchOrderedTable<Key extends Comparable<? super Key>, Value
         return true;
     }
 
+    // Test input: S E A R C H E X A M P L E
     public static void main(final String[] arguments) {
         final BinarySearchOrderedTable<String, Integer> table = new BinarySearchOrderedTable<String, Integer>();
 

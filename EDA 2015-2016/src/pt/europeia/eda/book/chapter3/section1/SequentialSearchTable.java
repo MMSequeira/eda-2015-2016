@@ -165,6 +165,7 @@ public class SequentialSearchTable<Key, Value> {
         return true;
     }
 
+    // Test input: S E A R C H E X A M P L E
     public static void main(final String[] arguments) {
         final SequentialSearchTable<String, Integer> table = new SequentialSearchTable<String, Integer>();
 
