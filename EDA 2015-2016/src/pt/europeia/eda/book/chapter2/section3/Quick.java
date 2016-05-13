@@ -43,11 +43,11 @@ public final class Quick {
         while (true) {
 
             do
-                ++i;
+                i++;
             while (isLess(values[i], pivot) && i != last);
 
             do
-                --j;
+                j--;
             while (isLess(pivot, values[j]) && j != first);
 
             if (i >= j)
