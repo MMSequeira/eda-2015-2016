@@ -72,7 +72,7 @@ public final class Quick {
         int first = 0;
         int last = values.length - 1;
 
-        while (last > first) {
+        while (first < last) {
             final int j = partition(values, first, last);
             if (j > k)
                 last = j - 1;
