@@ -3,8 +3,8 @@ package pt.europeia.eda.book.chapter3.section1;
 public class OrderedTableTester {
 
     public static void main(final String[] arguments) {
-        //final BinarySearchOrderedTable<String, Integer> table = new BinarySearchOrderedTable<String, Integer>();
-        final SequentialSearchOrderedTable<String, Integer> table = new SequentialSearchOrderedTable<String, Integer>();
+        //final BinarySearchOrderedTable<String, Integer> table = new BinarySearchOrderedTable<>();
+        final SequentialSearchOrderedTable<String, Integer> table = new SequentialSearchOrderedTable<>();
 
         assert table.size() == 0;
         assert table.isEmpty();
