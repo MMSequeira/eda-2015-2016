@@ -167,7 +167,7 @@ public class SequentialSearchTable<Key, Value> {
 
     // Test input: S E A R C H E X A M P L E
     public static void main(final String[] arguments) {
-        final SequentialSearchTable<String, Integer> table = new SequentialSearchTable<String, Integer>();
+        final SequentialSearchTable<String, Integer> table = new SequentialSearchTable<>();
 
         for (int i = 0; !StdIn.isEmpty(); i++) {
             final String word = StdIn.readString();
