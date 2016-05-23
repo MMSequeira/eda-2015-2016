@@ -321,7 +321,7 @@ public class BinarySearchOrderedTable<Key extends Comparable<? super Key>, Value
 
     // Test input: S E A R C H E X A M P L E
     public static void main(final String[] arguments) {
-        final BinarySearchOrderedTable<String, Integer> table = new BinarySearchOrderedTable<String, Integer>();
+        final BinarySearchOrderedTable<String, Integer> table = new BinarySearchOrderedTable<>();
 
         for (int i = 0; !StdIn.isEmpty(); i++) {
             final String word = StdIn.readString();
