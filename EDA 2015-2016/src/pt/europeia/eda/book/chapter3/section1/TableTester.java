@@ -3,7 +3,7 @@ package pt.europeia.eda.book.chapter3.section1;
 public class TableTester {
 
     public static void main(final String[] arguments) {
-        final SequentialSearchTable<String, Integer> table = new SequentialSearchTable<String, Integer>();
+        final SequentialSearchTable<String, Integer> table = new SequentialSearchTable<>();
 
         assert table.size() == 0;
         assert table.isEmpty();
