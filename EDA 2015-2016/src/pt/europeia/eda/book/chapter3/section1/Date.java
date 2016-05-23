@@ -33,6 +33,7 @@ public final class Date implements Comparable<Date> {
             return false;
 
         final Date that = (Date) other;
+        
         if (day != that.day)
             return false;
         if (month != that.month)
