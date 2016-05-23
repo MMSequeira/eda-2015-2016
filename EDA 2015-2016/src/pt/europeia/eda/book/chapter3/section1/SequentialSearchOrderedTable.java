@@ -323,7 +323,7 @@ public class SequentialSearchOrderedTable<Key extends Comparable<? super Key>, V
     }
 
     public static void main(final String[] arguments) {
-        final SequentialSearchOrderedTable<String, Integer> table = new SequentialSearchOrderedTable<String, Integer>();
+        final SequentialSearchOrderedTable<String, Integer> table = new SequentialSearchOrderedTable<>();
 
         for (int i = 0; !StdIn.isEmpty(); i++) {
             final String word = StdIn.readString();
