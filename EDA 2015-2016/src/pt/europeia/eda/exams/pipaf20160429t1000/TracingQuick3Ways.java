@@ -173,7 +173,8 @@ public final class TracingQuick3Ways {
             for (int first = 0; first != values.length - length + 1; first++)
                  out.println(rangeAsString(values, first, first + length - 1));
         */
-        TracingQuick3Ways.sort(values);
+
+        sort(values);
     }
 
 }
