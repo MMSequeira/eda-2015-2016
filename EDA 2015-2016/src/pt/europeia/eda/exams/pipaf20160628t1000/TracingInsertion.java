@@ -67,7 +67,7 @@ public final class TracingInsertion {
 
     private static void swap(final double[] values, final int i, final int j) {
         out.println("\t\tSwapping values[" + i + "] = " + values[i]
-                + " with values[" + j + "] = " + values[j] + ")");
+                + " with values[" + j + "] = " + values[j]);
 
         numberOfSwaps++;
         numberOfArrayReads++;
